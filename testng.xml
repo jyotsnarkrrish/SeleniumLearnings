@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!-- <suite name="Suite" parallel="tests" preserve-order="true"> -->
+
+
+
+<!-- 	<test name="Functional Testing in Mobile Web">
+		<parameter name="deviceName" value="" />
+		<parameter name="platformName" value="" />
+		<parameter name="platformVersion" value="" />
+		<parameter name="udid" value="" />
+		<parameter name="browserName" value="Chrome" />
+		<parameter name="browserVersion" value="" />
+		<parameter name="nodeIP" value="" />
+		<parameter name="nodePort" value="" />
+		<classes>
+			<class name="com.test.all.TestActions" />
+		</classes>
+ 	</test>  -->
+ 	
+ 	
+ 	
+ 	<suite name="Suite" verbose="1">
+    <test name="TestNG Grid">
+        <classes>
+        <class name="com.SeleniumGrid.GridExampleTest"/>
+        </classes>
+    </test>
+    
+	<!-- <test name="Functional Testing in Mobile Web1"> <parameter name="deviceName" 
+		value="" /> <parameter name="platformName" value="" /> <parameter name="platformVersion" 
+		value="" /> <parameter name="udid" value="" /> <parameter name="browserName" 
+		value="chrome" /> <parameter name="browserVersion" value="" /> <parameter 
+		name="desktopOSName" value="" /> <parameter name="nodeIP" value="" /> <parameter 
+		name="nodePort" value="" /> <classes> <class name="com.test.all.TestActions" 
+		/> </classes> </test> -->
+
+	<!-- <test name="Functional Testing in Mobile Web2"> <parameter name="deviceName" 
+		value="" /> <parameter name="platformName" value="" /> <parameter name="platformVersion" 
+		value="" /> <parameter name="udid" value="" /> <parameter name="browserName" 
+		value="firefox" /> <parameter name="browserVersion" value="" /> <parameter 
+		name="desktopOSName" value="" /> <parameter name="nodeIP" value="" /> <parameter 
+		name="nodePort" value="" /> <classes> <class name="com.test.all.TestActions" 
+		/> </classes> </test> -->
+	<!-- <test name="Functional Testing in Native"> <parameter name="deviceName" 
+		value="iPhone 6S" /> <parameter name="platformName" value="iOS" /> <parameter 
+		name="platformVersion" value="9.2" /> <parameter name="udid" value="22DA473129BBF7735D0CB04F8E39C901F852FF77" 
+		/> <parameter name="browserName" value="safari" /> <parameter name="browserVersion" 
+		value="" /> <parameter name="desktopOSName" value="" /> <parameter name="nodeIP" 
+		value="" /> <parameter name="nodePort" value="" /> <classes> <class name="com.test.all.TestActions" 
+		/> </classes> </test> -->
+
+	<!-- <test name="Functional Testing in Web1">
+	
+		<parameter name="deviceName" value="" />
+		<parameter name="platformName" value="" />
+		<parameter name="platformVersion" value="" />
+		<parameter name="udid" value="" />
+		<parameter name="browserName" value="safari" />
+		<parameter name="browserVersion" value="" />
+		<parameter name="desktopOSName" value="" />
+		<parameter name="nodeIP" value="" />
+		<parameter name="nodePort" value="" />
+		<classes>
+			<class name="com.test.all.TestActions" />
+		</classes>
+ 	</test>  -->
+	<!-- <test name="Functional Testing in Web2">
+	
+		<parameter name="deviceName" value="" />
+		<parameter name="platformName" value="" />
+		<parameter name="platformVersion" value="" />
+		<parameter name="udid" value="" />
+		<parameter name="browserName" value="safari" />
+		<parameter name="browserVersion" value="" />
+		<parameter name="desktopOSName" value="" />
+		<parameter name="nodeIP" value="" />
+		<parameter name="nodePort" value="" />
+		<classes>
+			<class name="com.test.all.TestActions" />
+		</classes>
+	</test> -->
+<!-- 	<test name="Functional Testing in Web3">
+	
+		<parameter name="deviceName" value="" />
+		<parameter name="platformName" value="" />
+		<parameter name="platformVersion" value="" />
+		<parameter name="udid" value="" />
+		<parameter name="browserName" value="ie" />
+		<parameter name="browserVersion" value="" />
+		<parameter name="desktopOSName" value="" />
+		<parameter name="nodeIP" value="" />
+		<parameter name="nodePort" value="" />
+		<classes>
+			<class name="com.test.all.TestActions" />
+		</classes>
+	</test>  -->
+<!-- 	<test name="Functional Testing in Web4">
+	
+		<parameter name="deviceName" value="" />
+		<parameter name="platformName" value="" />
+		<parameter name="platformVersion" value="" />
+		<parameter name="udid" value="" />
+		<parameter name="browserName" value="firefox" />
+		<parameter name="browserVersion" value="" />
+		<parameter name="desktopOSName" value="" />
+		<parameter name="nodeIP" value="" />
+		<parameter name="nodePort" value="" />
+		<classes>
+			<class name="com.test.all.TestActions" />
+		</classes>
+	</test> -->
+<!-- 	
+	<test name="Functional Testing in Web5">
+	
+		<parameter name="deviceName" value="" />
+		<parameter name="platformName" value="" />
+		<parameter name="platformVersion" value="" />
+		<parameter name="udid" value="" />
+		<parameter name="browserName" value="opera" />
+		<parameter name="browserVersion" value="" />
+		<parameter name="desktopOSName" value="" />
+		<parameter name="nodeIP" value="" />
+		<parameter name="nodePort" value="" />
+		<classes>
+			<class name="com.test.all.TestActions" />
+		</classes>
+	</test> -->
+	
+
+	
+<!-- 	<test name="Functional Testing in Web">
+		<parameter name="deviceName" value="samsung" />
+		<parameter name="platformName" value="Android" />
+		<parameter name="platformVersion" value="" />
+		<parameter name="udid" value="6527d85f" />
+		<parameter name="browserName" value="chrome" />
+		<parameter name="browserVersion" value="" />
+		<parameter name="desktopOSName" value="" />
+		<parameter name="nodeIP" value="" />
+		<parameter name="nodePort" value="" />
+		<classes>
+			<class name="com.test.all.TestActions" />
+		</classes>
+	</test> -->
+
+	<!-- <test name="Functional Testing in SauceLab"> <parameter name="deviceName" 
+		value="" /> <parameter name="platformName" value="Linux" /> <parameter name="platformVersion" 
+		value="" /> <parameter name="udid" value="" /> <parameter name="browserName" 
+		value="chrome" /> <parameter name="browserVersion" value="48" /> <parameter 
+		name="desktopOSName" value="" /> <parameter name="nodeIP" value="" /> <parameter 
+		name="nodePort" value="" /> <classes> <class name="com.test.all.TestActions" 
+		/> </classes> </test> -->
+
+</suite> 
