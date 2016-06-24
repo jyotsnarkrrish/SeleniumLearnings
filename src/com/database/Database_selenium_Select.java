@@ -1,4 +1,5 @@
-package com.Selenium;
+package com.database;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -7,7 +8,7 @@ import java.sql.Statement;
 
 import org.testng.annotations.Test;
 
-public class Database_selenium {
+public class Database_selenium_Select {
 	@Test
 	public static void Database() throws ClassNotFoundException, SQLException {
 		String dbUrl = "jdbc:mysql://localhost:3306/employee";
@@ -29,15 +30,13 @@ public class Database_selenium {
 
 		// While Loop to iterate through all data and print results
 		while (rs.next()) {
-			String myName = rs.getString(1);
-			String myAge = rs.getString(2);
-			System.out.println(myName + "  " + myAge);
+			String Name = rs.getString(1);
+			String Company = rs.getString(2);
+			String ID = rs.getString(3);
+			System.out.println(Name + "  " + Company + " " + ID);
 		}
 		// closing DB Connection
 		con.close();
 	}
-	
-	public static void main(String args[]) throws ClassNotFoundException, SQLException{
-	Database();
-	}
+
 }
