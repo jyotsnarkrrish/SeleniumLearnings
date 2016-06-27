@@ -14,8 +14,11 @@ public class Database_selenium_Select {
 		String dbUrl = "jdbc:mysql://localhost:3306/employee";
 
 		// Query to Execute
-		String query = "select * from emp;";
-
+		// String query = "select * from emp;";
+		// String query="select company from emp";
+		String query = "select distinct company from emp";
+		
+		
 		// Load mysql jdbc driver
 		Class.forName("com.mysql.jdbc.Driver");
 
@@ -30,10 +33,11 @@ public class Database_selenium_Select {
 
 		// While Loop to iterate through all data and print results
 		while (rs.next()) {
-			String Name = rs.getString(1);
-			String Company = rs.getString(2);
-			String ID = rs.getString(3);
-			System.out.println(Name + "  " + Company + " " + ID);
+			// String Name = rs.getString(1);
+			String Company = rs.getString("Company");
+			// String ID = rs.getString(3);
+			System.out.println(Company);
+			// System.out.println(Name + " " + Company + " " + ID);
 		}
 		// closing DB Connection
 		con.close();

@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="347" started-at="2016-06-24T06:26:15Z" finished-at="2016-06-24T06:26:15Z">
+  <suite name="Default suite" duration-ms="3801" started-at="2016-06-27T11:19:31Z" finished-at="2016-06-27T11:19:35Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="347" started-at="2016-06-24T06:26:15Z" finished-at="2016-06-24T06:26:15Z">
-      <class name="com.database.Database_selenium_Select">
-        <test-method status="PASS" signature="Database()[pri:0, instance:com.database.Database_selenium_Select@6cc4c815]" name="Database" duration-ms="320" started-at="2016-06-24T11:56:15Z" finished-at="2016-06-24T11:56:15Z">
+    <test name="Default test" duration-ms="3801" started-at="2016-06-27T11:19:31Z" finished-at="2016-06-27T11:19:35Z">
+      <class name="com.Selenium.Selection_All">
+        <test-method status="PASS" signature="selectSamples()[pri:0, instance:com.Selenium.Selection_All@51efea79]" name="selectSamples" duration-ms="3773" started-at="2016-06-27T16:49:31Z" finished-at="2016-06-27T16:49:35Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Database -->
-      </class> <!-- com.database.Database_selenium_Select -->
+        </test-method> <!-- selectSamples -->
+      </class> <!-- com.Selenium.Selection_All -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

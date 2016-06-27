@@ -13,11 +13,12 @@ import org.testng.annotations.Test;
 public class RobotClass {
 	@Test
 	public static void Test() throws InterruptedException, AWTException{
-		
+		System.setProperty("webdriver.chrome.driver", "E:\\Downloads\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
 	
-		WebDriver driver = new FirefoxDriver();
-		driver.get("http://spreadsheetpage.com/index.php/file/C35/P10/"); // sample
-																			// url
+		//WebDriver driver = new FirefoxDriver();
+		// sample url
+		driver.get("http://spreadsheetpage.com/index.php/file/C35/P10/"); 
 		driver.findElement(By.xpath(".//a[@href=contains(text(),'animatedcolors.xls')]")).click();
 		Robot robot = new Robot(); // Robot class throws AWT Exception
 		Thread.sleep(2000); // Thread.sleep throws InterruptedException
@@ -27,7 +28,8 @@ public class RobotClass {
 
 		Thread.sleep(2000); // sleep has only been used to showcase each event
 							// separately
-		robot.keyPress(KeyEvent.VK_TAB);
+		robot.
+		keyPress(KeyEvent.VK_TAB);
 		Thread.sleep(2000);
 		robot.keyPress(KeyEvent.VK_TAB);
 		Thread.sleep(2000);
@@ -36,10 +38,10 @@ public class RobotClass {
 		robot.keyPress(KeyEvent.VK_ENTER);
 		// press enter key of keyboard to perform above selected action
 	}
-	public static void main(String[] args) throws InterruptedException, AWTException {
+	/*public static void main(String[] args) throws InterruptedException, AWTException {
 		Test();
 	}
-	
+	*/
 
 }
 
