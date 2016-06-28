@@ -9,7 +9,18 @@ import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-
+/*
+ * 
+ * Register Hub:
+ * java -jar selenium-server-standalone-2.48.2.jar -role hub
+ * 
+ * Register node with Hub:
+ * java -jar selenium-server-standalone-2.48.2.jar -role node -hub http://localhost:4444/grid/register
+ * 
+ * Navigate to:
+ * http://localhost:4444/grid/console 
+ * 
+ */
 public class GridExampleTest {
 	
 	public RemoteWebDriver driver;
