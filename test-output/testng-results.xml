@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="25210" started-at="2016-06-28T12:14:02Z" finished-at="2016-06-28T12:14:27Z">
+  <suite name="Default suite" duration-ms="15455" started-at="2016-06-30T09:22:04Z" finished-at="2016-06-30T09:22:19Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="25210" started-at="2016-06-28T12:14:02Z" finished-at="2016-06-28T12:14:27Z">
+    <test name="Default test" duration-ms="15455" started-at="2016-06-30T09:22:04Z" finished-at="2016-06-30T09:22:19Z">
       <class name="com.Selenium.RobotClass">
-        <test-method status="PASS" signature="UploadFile()[pri:0, instance:com.Selenium.RobotClass@78e117e3]" name="UploadFile" duration-ms="25174" started-at="2016-06-28T17:44:02Z" finished-at="2016-06-28T17:44:27Z">
+        <test-method status="PASS" signature="UploadFile()[pri:0, instance:com.Selenium.RobotClass@396a51ab]" name="UploadFile" duration-ms="15417" started-at="2016-06-30T14:52:04Z" finished-at="2016-06-30T14:52:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UploadFile -->

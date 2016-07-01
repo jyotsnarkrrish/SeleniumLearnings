@@ -8,13 +8,16 @@ import java.awt.event.KeyEvent;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
-
+/***
+ * 
+ * @author jyotsna.r
+ * 
+ * Sleep required while uploading file
+ */	
 public class RobotClass {
 	// @Test
 	public static void DownloadFile() throws InterruptedException, AWTException {
@@ -46,22 +49,28 @@ public class RobotClass {
 	public static void UploadFile() throws AWTException, InterruptedException {
 		System.setProperty("webdriver.chrome.driver", "E:\\Downloads\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
-		driver.get("https://blueimp.github.io/jQuery-File-Upload/basic.html");
+		//driver.get("https://blueimp.github.io/jQuery-File-Upload/basic.html");
+		driver.get("http://cgi-lib.berkeley.edu/ex/fup.html");
 		
 		
-		String fileLocation = "Upload.txt";
+		
+		String fileLocation = "Upload";
 		String str = System.getProperty("user.dir");
 		String replacecode = str.replace("\\", "//");
 		String filepath = replacecode.concat("//"+fileLocation);
 		
 	
 		WebDriverWait wait= new WebDriverWait(driver, 5);
-		wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("/html/body/div[2]/span")))).click();
+		//wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("/html/body/div[2]/span")))).click();
+		wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.name("upfile")))).click();
+		Thread.sleep(2000);
 
+		    
 		String replacecode1 = filepath.replace("//", "\\");
 		StringSelection stringSelection = new StringSelection(replacecode1);
 		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(stringSelection, null);
 		Robot robot = new Robot();
+		Thread.sleep(2000);
 		robot.keyPress(KeyEvent.VK_CONTROL);
 		robot.keyPress(KeyEvent.VK_V);
 		robot.keyRelease(KeyEvent.VK_V);
